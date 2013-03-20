@@ -82,7 +82,7 @@ public class FakeGPSLocation implements Action {
     		location.setTime(System.currentTimeMillis());
 
             	if (Build.VERSION.SDK_INT >= 17) {
-            		location.setElapsedRealtimeNanos(System.nanoTime()+1);
+            		location.setElapsedRealtimeNanos(System.nanoTime());
         	}
 
             	locationManager.setTestProviderLocation(locationProvider, location);
